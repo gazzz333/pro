@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+/* /Плавная прокрутка */
+
+/* Подключение шрифтов */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Подключение шрифтов */
+
+/* Шапка */
+header {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+header img {
+    width: 100px;
+    margin: 5px;
+}
+
+.info {
+    text-align: right;
+    align-items: center;
+    width: 100%;
+
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+
+    color: black;
+}
+
+
+
+.welcome {  
+    background-image: url(fon.png);
+    background-size: cover;
+    height: 100vh;
+      width: -100vh;
+    display: flex;
+    justify-content: center;
+}
+nav {
+  max-width: 1960px;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  margin-bottom: 10px;
+  
+}
+ 
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+ 
+nav ul li {
+  display: inline-block;
+}
+ 
+nav ul li a {
+  padding: 20px;
+  font-family: "Roboto";
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+ 
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+.welcome h1 {
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    color: white;
+
+    font-size: 40px;
+
+    background-color: rgba(95, 95, 95, 0.616);
+    padding: 10px;
+    border-radius: 5px;
+
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+/* Анимация */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+/* /Анимация */
+/* /Шапка */
+
+
+.h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+}
+/* Услуги */
+.uslugi {
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.list_uslugi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.usluga {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    
+    border-radius: 5px;
+    box-shadow: 0 0 10px silver;
+    text-align: center;
+    padding: 1%;
+}
+
+.usluga img {
+    height: 150px;
+
+    align-self: center;
+}
+
+.usluga p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-style: oblique;
+}
+/* /Услуги */
+
+/* Кнопка узнать подробнее */
+.read_more {
+    font-size: 1.2rem;
+    padding: 2%;
+
+    border-radius: 5px;
+    border: 2px solid black;
+
+    color: white;
+    background-color: darkslategray;
+}
+
+.read_more:hover {
+    font-size: 1.3rem;
+    transition: all .3s ease-in-out;
+}
+
+/* Футер */
+footer {
+
+   flex: 0 0 auto;
+    text-align: center;
+    background-color:#f0f0f0;
+
+    color: black;
+
+}
+
+footer img {
+    width: 100px;
+}
+/* /Футер */
+
+/* Кнопка вверх */
+.button-up
+ { 
+   height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px silver;
+    border-radius: 50px;
+    line-height: 3rem;
+    text-align: center;
+   
+}
+ 
+
+.preim {
+    background-color: #f0f0f0f0;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 2.1rem;
+}
+
+.preim-img {
+    height: 30vh;
+    margin-left: 1vw;
+    margin-bottom: 10px;
+}
+
+.preim div {
+    display: flex;
+    flex-direction: row;
+}
+
+.preim div p {
+    font-size: 1.9rem;
+    margin-left: 2vw;
+    align-self: center;
+
+}
+/* Преимущества */
+
+.razcet{
+  background:transparent;
+    border: 1px solid steelblue; 
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: steelblue;
+    
+    
+    cursor:pointer;
+}
+.razcet:hover{
+  background-color: steelblue;
+color:white;
+}
+
+
+.event-default-caption{
+  background:transparent;
+    border: 1px solid steelblue; 
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: steelblue;
+    
+    
+    cursor:pointer;   
+}
+.event-default-caption:hover{
+  background-color: steelblue;
+color:white;
+}
+
+.cont
+{
+  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cont.grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 15px;
+}
+.cont.grid .item{
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+    
+}
+
+.cont-img {
+    height: 30vh;
+    margin-left: 1vw;
+}
+
+.item img{
+    width: 100%;
+}
+
+.vhod{
+ background:transparent;
+    border: 1px solid steelblue;
+    border-radius: 15px;
+    color:steelblue;
+    padding: 15px 25px;
+     cursor:pointer;
+}
+.vhod:hover
+{
+background-color: steelblue;
+color:white;
+}
+
+iframe{
+display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/* Наши сотрудники */
+.list_sotrudniki {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sotrudnik img {
+    height: 200px;
+}
+
+.sotrudnik {
+    text-align: center;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 10px;
+
+    box-shadow: 0 5px 15px silver;
+}
+
+.sotrudnik p {
+    font-weight: bold;
+}
+
+.sotrudniki {
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+/* Наши сотрудники */
+
+.onas
+{
+  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.onas-img {
+    height: 100%;
+    margin-left: 1vw;
+    
+}
+
+.onas div {
+    display: flex;
+    flex-direction: row;
+}
+
+.onas div p {
+    font-size: 1.9rem;
+    margin-left: 2vw;
+    align-self: center;
+
+}
+
+.otz
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.otz-img {
+    height: 30vh;
+    margin-left: 1vw;
+}
+
+.otz div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+/* свойства модального окна по умолчанию */
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+      pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+.evnt-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.strahovania{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list-inline-item{
+  padding: 20px;
+}
+
+.peoples-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*пробелы между словами*/
+    margin-bottom: 40px;
+}
+.peoples-item{
+    text-align: center;
+}
+.peoples-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    
+    margin-bottom: 20px;
+}
+h1{
+    padding: 10px;
+}
+.cont-img{
+   width: 50px;
+    height: 50px; 
+}
+.peoples-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*пробелы между словами*/
+    margin-bottom: 40px;
+}
+.peoples-item{
+    text-align: center;
+}
+.peoples-item img{
+    border-radius: 100px;
+    background-color:#000;
+    margin-bottom: 20px;
+}
